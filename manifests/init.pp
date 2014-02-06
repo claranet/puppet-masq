@@ -2,10 +2,11 @@
 #
 # Sets up iptables masquerading
 #
-class masq (
-) inherits masq::params {
+class masq {
 
-  # validate parameters here
+  unless ($::kernel == 'Linux') {
+    fail("Sorry, ${::kernel} is unsupported")
+  }
 
   class { 'masq::config': } ~>
   Class['masq']

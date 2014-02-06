@@ -1,5 +1,6 @@
 fixtures:
   repositories:
-    stdlib: "git://github.com/puppetlabs/puppetlabs-stdlib.git"
+    firewall: "git@github.com:puppetlabs/puppetlabs-firewall.git"
+    sysctl: "git@github.com:fiddyspence/puppet-sysctl.git"
   symlinks:
     masq: "#{source_dir}"

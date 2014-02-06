@@ -11,6 +11,7 @@ RSpec.configure do |c|
   c.before :suite do
     puppet_install
     puppet_module_install(:source => proj_root, :module_name => 'masq')
-    shell('puppet module install puppetlabs-stdlib')
+    shell('puppet module install puppetlabs-firewall')
+    shell('puppet module install fiddyspence-sysctl
   end
 end
