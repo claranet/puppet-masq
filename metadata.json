@@ -1,6 +1,6 @@
 {
   "name": "bashtoni-masq",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Sam Bashton",
   "license": "Apache-2.0",
   "summary": "Configures masquerading on the server",
@@ -19,7 +19,7 @@
     }
    ],
   "dependencies": [
-    { "name": "fiddyspace/sysctl", "version_requirement": ">= 0.3.3"},
+    { "name": "fiddyspence/sysctl", "version_requirement": ">= 0.3.3"},
     { "name": "puppetlabs/firewall", "version_requirement": ">= 0.4.2"}
   ]
 }
