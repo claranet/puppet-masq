@@ -10,25 +10,25 @@ class masq::config {
     value     => '1',
   }
 
-  unless ('::masq::nat_rfc1918') {
+  unless ($::masq::nat_rfc1918) {
     firewall { '900 1918_10':
       chain       => 'POSTROUTING',
       destination => '10.0.0.0/8',
-      jump        => 'ACCEPT',
+      action      => 'accept',
       proto       => 'all',
       table       => 'nat',
     }
     firewall { '901 1918_172':
       chain       => 'POSTROUTING',
       destination => '172.16.0.0/12',
-      jump        => 'ACCEPT',
+      action      => 'accept',
       proto       => 'all',
       table       => 'nat',
     }
     firewall { '903 1918_192':
       chain       => 'POSTROUTING',
       destination => '192.168.0.0/16',
-      jump        => 'ACCEPT',
+      action      => 'accept',
       proto       => 'all',
       table       => 'nat',
     }
