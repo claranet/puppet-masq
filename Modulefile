@@ -1,5 +1,5 @@
 name          'bashtoni-masq'
-version       '0.0.1'
+version       '0.1.0'
 source        'https://github.com/BashtonLtd/puppet-masq'
 author        'bashtoni'
 license       'Apache License, Version 2.0'

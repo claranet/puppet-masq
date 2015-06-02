@@ -32,6 +32,10 @@ class { 'firewall': }
 class { 'masq': }
 ```
 
+If you want to avoid NATing traffic destined for private address space,
+you can set the parameter 'nat_rfc1918' to false.  Note this will
+prevent and subsequent POSTROUTING rules from being executed.
+
 ##Limitations
 
 Linux specific
