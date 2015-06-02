@@ -1,0 +1,25 @@
+{
+  "name": "bashtoni-masq",
+  "version": "0.1.1",
+  "author": "Sam Bashton",
+  "license": "Apache-2.0",
+  "summary": "Configures masquerading on the server",
+  "source": "https://github.com/BashtonLtd/puppet-masq",
+  "project_page": "https://github.com/BashtonLtd/puppet-masq",
+  "issues_url": "https://github.com/BashtonLtd/puppet-masq/issues",
+  "tags": ["nat"],
+  "operatingsystem_support": [
+    {
+    "operatingsystem":"RedHat",
+    "operatingsystemrelease":[ "5.0", "6.0", "7.0" ]
+    },
+    {
+    "operatingsystem": "Ubuntu",
+    "operatingsystemrelease": [ "14.04", "12.04", "10.04" ]
+    }
+   ],
+  "dependencies": [
+    { "name": "fiddyspace/sysctl", "version_requirement": ">= 0.3.3"},
+    { "name": "puppetlabs/firewall", "version_requirement": ">= 0.4.2"}
+  ]
+}
