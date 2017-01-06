@@ -5,7 +5,10 @@
 # === Parameters:
 #
 # nat_rfc1918 - if false, will not NAT traffic for RFC1918 space
-class masq ($nat_rfc1918 = true) {
+class masq (
+  $ensure      = present,
+  $nat_rfc1918 = true
+){
 
   unless ($::kernel == 'Linux') {
     fail("Sorry, ${::kernel} is unsupported")
