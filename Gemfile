@@ -12,7 +12,7 @@ end
 group :development do
   gem 'travis'
   gem 'travis-lint'
-  gem 'puppet', ENV['PUPPET_VERSION'] || '~> 3.2.0'
+  gem 'puppet', ENV['PUPPET_VERSION'] || '~> 3.8'
   gem 'vagrant-wrapper'
   gem 'puppet-blacksmith'
 end
