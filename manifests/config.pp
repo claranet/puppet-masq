@@ -5,9 +5,8 @@
 class masq::config {
 
   sysctl { 'net.ipv4.ip_forward':
-    ensure    => $::masq::nat_forward,
-    permanent => 'yes',
-    value     => '1',
+    ensure => $::masq::nat_forward,
+    value  => '1',
   }
 
   if $::masq::nat_rfc1918 {
